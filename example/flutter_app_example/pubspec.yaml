@@ -1,0 +1,23 @@
+name: flutter_app_example
+description: Flutter counter app that demonstrates TimeTravelWidget integration.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  time_travel_debugger:
+    path: ../..
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

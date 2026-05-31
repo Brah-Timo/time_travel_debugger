@@ -1,0 +1,51 @@
+name: time_travel_debugger
+description: >-
+  Ultra-Pro time-travel debugger for Dart & Flutter that records state changes and lets you rewind execution step-by-step to inspect variables, memory, and app state at any point.
+
+version: 1.0.0
+homepage: https://github.com/Brah-Timo/time_travel_debugger
+repository: https://github.com/Brah-Timo/time_travel_debugger
+issue_tracker: https://github.com/Brah-Timo/time_travel_debugger/issues
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+topics:
+  - dart
+  - flutter
+  - debugging
+  - time-travel
+  - profiler
+  
+dependencies:
+  # Core utilities
+  collection: ^1.18.0
+  meta: ^1.9.1
+  uuid: ^4.3.3
+
+  # Serialisation
+  json_annotation: ^4.8.1
+
+  # Logging
+  logger: ^2.3.0
+
+  # Flutter (optional – guarded by conditional imports)
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  test: ^1.24.9
+  mockito: ^5.4.4
+  build_runner: ^2.4.9
+  json_serializable: ^6.7.1
+  lints: ^3.0.0
+
+# Dart-only projects can comment out the flutter section above and replace with:
+# dev_dependencies:
+#   test: ^1.24.9
+#   build_runner: ^2.4.9
+#   json_serializable: ^6.7.1
+#   lints: ^3.0.0
